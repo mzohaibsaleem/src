@@ -1,0 +1,41 @@
+.sticks-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    // height: 100px;
+    // min-height: 100px !important;
+    //  justify-content: space-between;
+    
+}
+ .sticksCard{
+    //   min-height: 100px !important;
+    width: 200px;
+    //  min-width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 0px;
+}
+
+.addButton{
+    // height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     transition: transform 0.5s ease-in-out;   
+}
+.plusIcon{
+    font-size: 100px !important;
+    color: rgba(63, 67, 40, 0.423);
+}
+.addButton:hover{
+    background-color:aqua ;
+    transform: scale(1.05);
+    transition: .5s;
+    box-shadow: rgba(9, 9, 211, 0.2) 0px 7px 29px 0px;
+}
+#dropdown{
+    position: relative;
+    left: 15px;
+}
