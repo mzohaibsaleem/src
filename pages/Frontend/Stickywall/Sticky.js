@@ -64,7 +64,7 @@ export default function Sticky() {
       array.push(data)
     });
     setSticks(array)
-    // console.log(sticks)
+     console.log(sticks)
   }
  
     
@@ -91,13 +91,7 @@ export default function Sticky() {
       bgcolor: colorList[randomIndex],
       id: randomId
     };
-    // const updatedSticks = [...sticks, card];
-    //  localStorage.setItem('Stick', JSON.stringify(updatedSticks));
-    
-    // setTitle('');
-    // setDate('');
-    // setLocation('');
-    // setDescription('');
+   
     console.log(card)
     
     setModelVisible(false);
@@ -122,13 +116,13 @@ export default function Sticky() {
       {sticks.map((card, i) => (
         <div style={{ backgroundColor: card.bgcolor }} key={i} className='card scard p-3 m-3  col-md-3 col-sm-6 col-xl-2'>
          <div> <Dropdown  className='float-end bg-transparent border-0 p-0 text-3' id="dropdown" overlay={<Menu>
-                                    <Menu.Item key={"Edit"} onClick={() => { }}>Edit</Menu.Item>
-                                    <Menu.Item key={"Delete"} onClick={() => {  }}>Delete</Menu.Item>
-                                </Menu>} placement="bottomRight">
-                                    <button className="ellipsis-button">
-                                        <DownOutlined />
-                                    </button>
-                                </Dropdown>
+                            <Menu.Item key={"Edit"} onClick={() => { }}>Edit</Menu.Item>
+                            <Menu.Item key={"Delete"} onClick={() => {  }}>Delete</Menu.Item>
+                            </Menu>} placement="bottomRight">
+                            <button className="ellipsis-button">
+                            <DownOutlined />
+                            </button>
+                            </Dropdown>
           <p><b><u>Title</u></b></p> </div>
           {card.title}
           <p><b><u>Date</u></b></p>
@@ -140,7 +134,7 @@ export default function Sticky() {
         </div>
       ))}
       <button className='card sticksCard p-3 m-3 addButton col-md-3 col-sm-6 col-xl-2' onClick={openModal}>
-        <i className="fa-solid fa-plus plusIcon"></i> <p className='addtext'>Add</p>
+        {/* <i className="fa-solid fa-plus plusIcon"></i> <p className='addtext'>Add</p> */}
       </button>
       <Modal title="Add Stick" visible={modelVisible} onCancel={() => setModelVisible(false)} onOk={addStick}>
         <Form>
