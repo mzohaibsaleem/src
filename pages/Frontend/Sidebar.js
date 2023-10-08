@@ -22,9 +22,9 @@ import Copy from '../../Components/Footer/Copy'
 import Head from '../../Components/Header/Head';
 import {  Menu, Button, theme, Input, Divider } from 'antd';
 import Menusidebar from '.';
-import Ongoing from '../Dashboard/ongoing/Ongoing';
-import Today from '../Dashboard/today/Today';
-import Upcoming from '../Dashboard/upcoming/Upcoming';
+import Ongoing from '../Dashboard/student/Ongoing';
+import Today from '../Dashboard/course/Today';
+import Upcoming from '../Dashboard/attendence/Upcoming';
 import Mroutes from './Mroutes';
 const { Header, Footer, Sider, Content } = Layout;
 // const [collapsed, setCollapsed] = ();
@@ -76,22 +76,22 @@ const App:React.FC= () => (
         <main>
          <Menu id='menu' style={menu} items={[
             {
-              label:<Link to={"/"}>Home</Link>,
+              label:<Link to={"/"}>Dashboard</Link>,
               icon:<HomeOutlined />,
               key:"/sticky"
             },
             {
-              label:<Link to={"/ongoing"} className=''>Out Dated</Link>,
+              label:<Link to={"/ongoing"} className=''>Student</Link>,
               icon:<CalendarOutlined />,
               // key:"/ongoing"
             },
             {
-              label:<Link to={"/today"}>Today</Link>,
+              label:<Link to={"/today"}>Courses</Link>,
               icon:<ClockCircleOutlined />,
               // key:"/today"
             },
             {
-              label:<Link to={"/upcoming"}>Upcoming</Link>,
+              label:<Link to={"/upcoming"}>Attendence</Link>,
               icon:<QrcodeOutlined />,
             },
             

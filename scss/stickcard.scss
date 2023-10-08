@@ -26,8 +26,8 @@
      transition: transform 0.5s ease-in-out;   
 }
 .plusIcon{
-    font-size: 100px !important;
-    color: rgba(63, 67, 40, 0.423);
+    font-size: 300px !important;
+    color: rgba(139, 158, 28, 0.423);
 }
 .addButton:hover{
     background-color:aqua ;
@@ -38,4 +38,8 @@
 #dropdown{
     position: relative;
     left: 15px;
+}
+.addtext{
+    // width: 100px;
+    // height: 100px;
 }

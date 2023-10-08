@@ -3,7 +3,7 @@ export default function Head() {
   return (
     <div>
         <header>
-            <h1 className='text-center'>Sticky wall</h1>
+            <h1 className='text-center'>Student Dashboad</h1>
         </header>
     </div>
   )

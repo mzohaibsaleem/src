@@ -1,7 +1,8 @@
 import React from 'react'
+import Ongoing from './student/Ongoing'
 
 export default function index() {
   return (
-    <div><Hero/></div>
+    <div><Ongoing/></div>
   )
 }

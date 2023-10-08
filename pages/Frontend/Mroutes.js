@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Sticky from './Stickywall/Sticky'
-import Ongoing from '../Dashboard/ongoing/Ongoing'
-import Today from '../Dashboard/today/Today'
-import Upcoming from '../Dashboard/upcoming/Upcoming'
+import Ongoing from '../Dashboard/student/Ongoing'
+import Today from '../Dashboard/course/Today'
+import Upcoming from '../Dashboard/attendence/Upcoming'
 
 
 export default function Mroutes() {
